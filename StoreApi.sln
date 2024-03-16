@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreApi", "StoreApi\StoreA
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EagleSwitch", "EagleSwitch\EagleSwitch.pyproj", "{6A6CF01C-B211-416F-84BB-DE841D092036}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "StockRest", "StockRest\StockRest.pyproj", "{6512103D-C4F9-42C1-BAFC-30725A6D1F43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,8 @@ Global
 		{342759EA-4776-4091-B076-4BE734752B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A6CF01C-B211-416F-84BB-DE841D092036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A6CF01C-B211-416F-84BB-DE841D092036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6512103D-C4F9-42C1-BAFC-30725A6D1F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6512103D-C4F9-42C1-BAFC-30725A6D1F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

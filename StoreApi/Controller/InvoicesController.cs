@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StoreApi.MessageHandler;
 using StoreApi.Model;
 using StoreApi.Repo;
 
@@ -11,7 +12,9 @@ namespace StoreApi.Controller
     {
 
         List<Invoice> invoices;
-        public InvoicesController() {
+        IConfiguration _configuration;
+        public InvoicesController(IConfiguration ic) {
+            _configuration = ic;
             invoices = DbContext.Invoices();
         }
         [HttpGet]
@@ -23,6 +26,8 @@ namespace StoreApi.Controller
         [HttpPost]
         public async Task<IEnumerable<Invoice>> Invoices(Invoice inv) { 
             invoices.Add(inv);
+            MessageBrokerHandler msg = new(_configuration);
+            msg.ConnectMq();
             return invoices;
         }
 

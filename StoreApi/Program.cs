@@ -1,6 +1,7 @@
 
 using Microsoft.Extensions.Configuration;
 using StoreApi.Constants;
+using StoreApi.Controller;
 using StoreApi.MessageHandler;
 using StoreApi.Model;
 using StoreApi.Repo;

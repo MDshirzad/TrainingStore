@@ -37,7 +37,6 @@ app.MapPost("/Products", (Product nProduct) => {
     products.Add(nProduct);
     return Results.Created($"/Products/{nProduct.Id}",products);
 });
-
 app.MapGet("/Discounts", ()=> { return DiscountCodes; });
 app.MapGet("/Discount/{id}", (int id) =>{return DiscountCodes.Where(_ => _.Id == id).FirstOrDefault();});
 app.MapPost("/Discounts", (DiscountCode discountCode) => {
